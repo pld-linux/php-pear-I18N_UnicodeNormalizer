@@ -9,7 +9,7 @@ Summary:	%{_pearname} - Unicode Normalizer
 Summary(pl.UTF-8):	%{_pearname} - normalizator Unicode
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	2
+Release:	3
 License:	The BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
