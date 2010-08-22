@@ -18,6 +18,7 @@ Patch0:		%{name}-paths_fix.patch
 URL:		http://pear.php.net/package/I18N_UnicodeNormalizer/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear >= 4:1.0-22
 Suggests:	php-pear-PEAR
 BuildArch:	noarch
