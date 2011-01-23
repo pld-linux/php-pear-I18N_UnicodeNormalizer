@@ -21,6 +21,7 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear >= 4:1.0-22
 Suggests:	php-pear-PEAR
+Obsoletes:	php-pear-I18N_UnicodeNormalizer-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -79,20 +80,6 @@ W pełni przetestowane za pomocą phpUnit. Pokrycie kodu bliskie 100%.
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{version}-%{release}
-AutoProv:	no
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
-
 %prep
 %pear_package_setup
 %patch0 -p1
@@ -117,7 +104,3 @@ fi
 %{php_pear_dir}/I18N/UnicodeNormalizer
 %{php_pear_dir}/I18N/UnicodeNormalizer.php
 %{php_pear_dir}/data/I18N_UnicodeNormalizer
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/I18N_UnicodeNormalizer
