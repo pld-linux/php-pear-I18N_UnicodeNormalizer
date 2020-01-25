@@ -1,6 +1,5 @@
 # TODO:
 #  - pl description cleanups
-%include	/usr/lib/rpm/macros.php
 %define		_class		I18N
 %define		_subclass	UnicodeNormalizer
 %define		_status		stable
